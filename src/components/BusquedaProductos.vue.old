@@ -1,0 +1,48 @@
+<template>
+  <div class="inicio">
+        <h1>{{  busqueda }}</h1><br>
+    <div class="form-group">
+      <form @submit.prevent="busqueda" method="get">
+        <div>
+          <label for="Nombre">Nombre del producto</label>
+          <input type="text"
+              id="Nombre"
+              class="form-control"
+              v-model="datosUsuario.producto">
+        </div>
+        <div>
+          <label for="marca">marca del producto</label>
+          <input type="text"
+              id="Apellidos"
+              class="form-control"
+              v-model="datosUsuario.marca">
+        </div>
+        <div>
+          <button class="btn btn-success" >buscar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</template>
+<script>
+    export default {
+        data() {
+            return {
+                busqueda: "busqueda de productos",
+                datosUsuario: {
+                    producto:'',
+                    marca: '',
+
+                }
+            }
+        }
+    }
+</script>
+<style>
+.inicio {
+    text-align: center;
+    font: arial;
+    margin: 20px;
+}
+
+</style>

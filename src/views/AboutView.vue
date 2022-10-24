@@ -1,6 +1,6 @@
 <template>
   <div class="about">
-    <h3>Esta es una página de "Acerca de..."</h3>
+    <h3>Esta es una página realizada para tarea MinTic</h3>
   </div>
 </template>
 

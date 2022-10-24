@@ -1,15 +1,24 @@
-<script setup>
+<script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
 //import HelloWorld from './components/HelloWorld.vue'
+
 </script>
 
 <template>
   <header>
     <div class="wrapper">
-      <nav>
-        <RouterLink to="/">Inicio</RouterLink>
-        <RouterLink to="/about">Prueba de extensión</RouterLink>
-      </nav>
+      <ul>
+        <nav>
+          <RouterLink to="/">Inicio
+          </RouterLink>
+          <RouterLink to="/crearCliente">Registrar Clientes</RouterLink>
+          <RouterLink to="/buscarCliente">Buscar Clientes</RouterLink>
+          <RouterLink to="/crearProducto">Registrar Productos</RouterLink>
+          <RouterLink to="/busquedaProductos">Buscar Productos</RouterLink>
+          <RouterLink to="/calificarAtencion">Puntacion</RouterLink>
+          <RouterLink to="/about">Acerca de la página</RouterLink>
+        </nav>
+      </ul>
     </div>
   </header>
 
@@ -77,5 +86,11 @@ nav a:first-of-type {
     padding: 1rem 0;
     margin-top: 1rem;
   }
+  ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-block-end: 1rem;
+}
 }
 </style>
